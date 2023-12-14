@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.menu-img-wrapper {
+  width: 100vw;
+  height: auto;
+}
+
+.menu-img {
+  width: 100vw;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 500;
+  display: none;
+}
+
+.fade {
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.fade.open {
+  position: fixed;
+  z-index: 450;
+  display: block;
+}
+
+.menu-img-wrapper.open {
+  overflow-y: hidden;
+}
+
+.pc.modal-img {
+  max-width: 1000px;
+  width: 100vw;
+  margin: 0 auto;
+  
+}
+
+.sp.modal-img {
+  max-width: 1000px;
+  width: 100vw;
+}
+
+#header {
+  z-index: 400;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+  display: block !important;
+}
+.sp {
+  display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 800px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+      ;(function (d) {
+        var config = {
+            kitId: 'cth5mhz',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive'
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a
+        h.className += ' wf-loading'
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
+        tk.async = true
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState
+          if (f || (a && a != 'complete' && a != 'loaded')) return
+          f = true
+          clearTimeout(t)
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        }
+        s.parentNode.insertBefore(tk, s)
+      })(document)
+    </script>
+    <title>えらべんとう|Top</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-wrapper">
+        <img
+          class="header-logo"
+          src="./img/header_logo0.png"
+          alt="えらべんとうのロゴ"
+        />
+        <nav class="header-menu">
+          <ul>
+            <li class="header-button order"><a href="#">Web注文</a></li>
+            <li class="header-button menu"><a href="./menu.html">メニュー</a></li>
+            <div class="header-menu-button">
+              <button type="button" class="MenuBtn Style01">
+                <span class="MenuBtn-BarFrame">
+                  <span class="MenuBtn-BarFrame-FirstBar"></span>
+                  <span class="MenuBtn-BarFrame-SecondBar"></span>
+                  <span class="MenuBtn-BarFrame-ThirdBar"></span>
+                </span>
+              </button>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="fv">
+        <div class="fv-wrapper">
+          <h1>
+            <img class="fv-logo" src="./img/fv_logo0.svg" alt="えらべんとう" />
+          </h1>
+        </div>
+      </div>
+      <div class="triangle"></div>
+
+      <div class="without-fv">
+        <section class="news">
+          <h2 class="heading">
+            <p class="h-jpn">お知らせ</p>
+            <p class="h-eng">NEWS</p>
+          </h2>
+          <ul class="news-list">
+            <li class="news-element">
+              <div class="news-element-wrapper">
+                <img
+                  src="./img/news-noimage0.jpg"
+                  class="news-img"
+                  alt="丸の内店の写真"
+                />
+                <div class="news-element-text">
+                  <div class="news-element-dateAndTag">
+                    <time datetime="2023-09-28">2023.12.10</time>
+                    <p>OPEN</p>
+                  </div>
+                  <p class="news-title">えらべんとう 丸の内店オープン！</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="news-element">
+              <div class="news-element-wrapper">
+                <img
+                  src="./img/news-noimage0.jpg"
+                  class="news-img"
+                  alt="丸の内店の写真"
+                />
+                <div class="news-element-text">
+                  <div class="news-element-dateAndTag">
+                    <time datetime="2023-09-27">2023.11.27</time>
+                    <p>MENU</p>
+                  </div>
+                  <p class="news-title">
+                    中華フェア第一弾！期間限定「回鍋肉」登場！
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="news-element">
+              <div class="news-element-wrapper">
+                <img
+                  src="./img/news-noimage0.jpg"
+                  class="news-img"
+                  alt="丸の内店の写真"
+                />
+                <div class="news-element-text">
+                  <div class="news-element-dateAndTag">
+                    <time datetime="2023-09-18">2023.09.12</time>
+                    <p>MEDIA</p>
+                  </div>
+                  <p class="news-title">公式サイトがオープンしました!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="news-more-button">
+            <p class="news-more">MORE<br /><span>ニュース一覧へ</span></p>
+            <div class="arrow-right"></div>
+          </a>
+        </section>
+
+        <section class="about">
+          <div class="about-background"></div>
+          <h2 class="heading-left">
+            <p class="h-eng">ABOUT</p>
+            <p class="h-jpn">概要</p>
+          </h2>
+          <div class="about-wrapper">
+            <img
+              class="about-img parallax"
+              src="./img/about_img.png"
+              alt="えらべんとうの弁当箱"
+            />
+            <div class="about-copy">
+              <h3 class="about-maincopy">
+                <span>なにたべよう?</span><span><br />迷う幸せ。</span
+                ><span><br />えらべんとう</span>
+              </h3>
+              <p class="about-text">
+                手軽で手頃なものとなると、意外といつも同じものになりがち。「えらべんとう」なら主食、主菜、副菜を選んで自分だけのお弁当がつくれちゃいます。<br />食事の時間を手軽に彩豊かにしませんか？<br /><span
+                  >BENTO FOR YOU</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="about-background-parallax parallax-back">
+          <img
+            src="./img/parallax.png"
+            alt="様々な弁当の画像"
+            class="bento-back"
+          />
+        </div>
+
+        <section class="feature">
+          <h2 class="feature-h2">
+            <p class="feature-eng">FEATURE</p>
+            <p class="feature-jpn">特徴</p>
+          </h2>
+          <ul class="feature-list">
+            <li class="feature-element">
+              <p class="feature-num">1</p>
+              <div class="feature-text-wrapper">
+                <h3 class="feature-heading">
+                  <span>組み合わせ</span><br /><span>1000以上</span>
+                </h3>
+                <p class="feature-text">
+                  ご飯・パンを選んで、主菜、副菜を自由に組み合わせれば、きっとあなたのお気に入りのお弁当が見つかるはず!
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-element">
+              <p class="feature-num">2</p>
+              <div class="feature-text-wrapper">
+                <h3 class="feature-heading">
+                  <span>いつでも</span><br /><span>つくりたて</span>
+                </h3>
+                <p class="feature-text">
+                  全てのお弁当は注文をいただいてからお作りしています。作りたての風味をお楽しみください。
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-element">
+              <p class="feature-num">3</p>
+              <div class="feature-text-wrapper">
+                <h3 class="feature-heading">
+                  <span>お値段を</span><br /><span>気にしない</span>
+                </h3>
+                <p class="feature-text">
+                  えらべんとうでは料理の種類ではなくサイズで料金が決まるので、値段を気にせず好きなものが食べられます。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="lineup">
+          <h2 class="lineup-heading">
+            <div class="loop-container">
+              <p class="big-text top loop__item">LINEUP</p>
+              <p class="big-text top loop__item">LINEUP</p>
+              <p class="big-text top loop__item">LINEUP</p>
+              <p class="big-text top loop__item">LINEUP</p>
+            </div>
+          </h2>
+          <div class="lineup-wrapper">
+            <ul class="lineup-size-list">
+              <li class="size-list-item">
+                <img
+                  class="size-bento-img"
+                  src="./img/lineup_s.png"
+                  alt="Sサイズの弁当箱"
+                />
+                <div class="size_price">
+                  <p class="size-size">S</p>
+                  <p class="size-price"><span>¥</span>400</p>
+                </div>
+                <p class="size-text">主食と主菜</p>
+              </li>
+              <li class="size-list-item">
+                <img
+                  class="size-bento-img"
+                  src="./img/lineup_m.png"
+                  alt="Sサイズの弁当箱"
+                />
+                <div class="size_price">
+                  <p class="size-size">M</p>
+                  <p class="size-price"><span>¥</span>500</p>
+                </div>
+                <p class="size-text">主食と主菜と副菜2個</p>
+              </li>
+              <li class="size-list-item">
+                <img
+                  class="size-bento-img"
+                  src="./img/lineup_l.png"
+                  alt="Sサイズの弁当箱"
+                />
+                <div class="size_price">
+                  <p class="size-size">L</p>
+                  <p class="size-price"><span>¥</span>600</p>
+                </div>
+                <p class="size-text">主食(L)と主菜(L)と副菜2個</p>
+              </li>
+            </ul>
+            <div class="lineup-tomenu">
+              <p class="lineup-text">単品でも買えます！</p>
+              <a href="#" class="news-more-button lineup">
+                <p class="news-more">MENU<br /><span>メニュー一覧へ</span></p>
+                <div class="arrow-right"></div>
+              </a>
+            </div>
+
+            <h2 class="lineup-heading">
+              <div class="loop-container">
+                <p class="big-text bottom loop2__item">NEUP LI</p>
+                <p class="big-text bottom loop2__item">NEUP LI</p>
+                <p class="big-text bottom loop2__item">NEUP LI</p>
+                <p class="big-text bottom loop2__item">NEUP LI</p>
+              </div>
+            </h2>
+          </div>
+        </section>
+        <section class="shops">
+          <h2 class="heading">
+            <p class="h-jpn">店舗情報</p>
+            <p class="h-eng">SHOPS</p>
+          </h2>
+          <div class="shop-list-wrapper">
+            <ul class="shop-list">
+              <li class="shop-list-item">
+                <div class="shop-name_detail-wrapper">
+                  <h3 class="shop-name">えらべんとう 丸の内店</h3>
+                  <p class="shop-detail">
+                    〒100-0000<br />東京都千代田区丸の内1-1<br />丸の内ビル
+                    地下1F<br />10:00 - 22:00<br />000-1234-5678
+                  </p>
+                </div>
+                <div class="shop-button-wrapper">
+                  <a href="#" class="shop-button orange">GoogleMap</a>
+                  <a href="#" class="shop-button orange"
+                    ><span>この店舗で</span>Web<span>注文</span></a
+                  >
+                </div>
+              </li>
+
+              <li class="shop-list-item">
+                <div class="shop-name_detail-wrapper">
+                  <h3 class="shop-name">えらべんとう 新宿店</h3>
+                  <p class="shop-detail">
+                    〒100-0000<br />東京都新宿区新宿1-1<br />新宿ビル 地下1F<br />10:00
+                    - 22:00<br />000-1234-5678
+                  </p>
+                </div>
+                <div class="shop-button-wrapper">
+                  <a href="#" class="shop-button orange">GoogleMap</a>
+                  <a href="#" class="shop-button orange"
+                    ><span>この店舗で</span>Web<span>注文 </span></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="comingsoon-wrapper">
+              <p class="coming-soon">COMING SOON...</p>
+              <p class="coming-soon-text">続々オープン予定!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">メニュー</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">WEB注文</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">よくある質問</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">アレルギー表示について</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">ログイン</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">ご利用規約</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">プライバシーポリシー</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="./img/header_logo0.png"
+        alt="えらべんとうのロゴ"
+        class="footer-logo"
+      />
+      <small class="footer-copyright">
+        <p>COPYRIGHT ©ERABENTO ALL RIGHTS RESERVED.</p>
+      </small>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const elem = document.querySelector('.parallax')
+        if (elem !== null) {
+          //クラス名js-target-parallaxがあるか判定
+          let target = document.getElementsByClassName('parallax') //クラス名js-target-parallaxがある要素をすべて取得
+          let targetBack = document.getElementsByClassName('bento-back') //クラス名js-target-parallaxがある要素をすべて取得
+
+          let parallaxConfig = {
+            //simpleParallaxの設定
+            delay: 0,
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true //必要なら
+            //maxTransition : 50 //必要なら
+          }
+
+          let parallaxConfigBack = {
+            //simpleParallaxの設定
+            delay: 0,
+            orientation: 'down',
+            scale: 2,
+            transition: 'cubic-bezier(0,0,0,1)',
+            overflow: false //必要なら
+            //maxTransition : 500 //必要なら
+          }
+
+          const parallax_instance = new simpleParallax(target, parallaxConfig)
+          const parallax_instance_back = new simpleParallax(
+            targetBack,
+            parallaxConfigBack
+          )
+        }
+      })
+    </script>
+  </body>
+</html>

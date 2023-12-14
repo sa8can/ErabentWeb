@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+      ;(function (d) {
+        var config = {
+            kitId: 'cth5mhz',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive'
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a
+        h.className += ' wf-loading'
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
+        tk.async = true
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState
+          if (f || (a && a != 'complete' && a != 'loaded')) return
+          f = true
+          clearTimeout(t)
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        }
+        s.parentNode.insertBefore(tk, s)
+      })(document)
+    </script>
+    <title>Menu|えらべんとう</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-wrapper">
+        <img
+          class="header-logo"
+          src="./img/header_logo0.png"
+          alt="えらべんとうのロゴ"
+        />
+        <nav class="header-menu">
+          <ul>
+            <li class="header-button order"><a href="#">Web注文</a></li>
+            <li class="header-button menu"><a href="./menu.html">メニュー</a></li>
+            <div class="header-menu-button">
+              <button type="button" class="MenuBtn Style01">
+                <span class="MenuBtn-BarFrame">
+                  <span class="MenuBtn-BarFrame-FirstBar"></span>
+                  <span class="MenuBtn-BarFrame-SecondBar"></span>
+                  <span class="MenuBtn-BarFrame-ThirdBar"></span>
+                </span>
+              </button>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="menu-img-wrapper">
+      <img class="pc menu-img" src="./img/pc_menu0.png" />
+      <img class="sp menu-img" src="./img/sp_menu0.png" />
+    </div>
+    <div class="fade"></div>
+    <div class="modal">
+      <img class="pc modal-img" src="./img/pc_menu_detail0.png" />
+      <img class="sp menu-img" src="./img/sp_menu_detail0.png" />
+    </div>
+    <script src="./js/menu-modal.js"></script>
+    <footer id="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">メニュー</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">WEB注文</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">よくある質問</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">アレルギー表示について</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">ログイン</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">ご利用規約</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">プライバシーポリシー</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-text">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="./img/header_logo0.png"
+        alt="えらべんとうのロゴ"
+        class="footer-logo"
+      />
+      <small class="footer-copyright">
+        <p>COPYRIGHT ©ERABENTO ALL RIGHTS RESERVED.</p>
+      </small>
+    </footer>
+  </body>
+</html>
